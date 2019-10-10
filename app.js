@@ -3,6 +3,7 @@ var bodyParser = require("body-parser");
 var mongoose = require("mongoose");
 var methodOverride = require("method-override");
 var expressSanitizer = require("express-sanitizer"); 
+const port = process.env.PORT || 3000;
 app = express();
 
 
@@ -107,6 +108,7 @@ app.delete("/blogs/:id",(req,res)=>{
 	});
 });
 
-app.listen(3000,()=>{
-	console.log("Server is ready!");
+
+app.listen(port,()=>{
+	console.log("Server is ready at the port "+port);
 });
