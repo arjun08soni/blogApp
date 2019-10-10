@@ -7,3 +7,9 @@ i.icon{
 body{
 	margin-top: 7em;
 }
+#delete{
+	display: inline;
+}
+i.circle.icon{
+	font-size: 1.1em;
+}
